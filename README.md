@@ -58,7 +58,7 @@ bias-aware-hmda-mortgage-approval/
 │
 ├── data/
 │   ├── raw/
-│   │   └── hmda_2023_state_raw_sample.csv
+│   │   └── state_MI.csv
 │   ├── processed/
 │   │   └── hmda_2023_modeling_dataset.csv
 │   └── data_dictionary.csv
