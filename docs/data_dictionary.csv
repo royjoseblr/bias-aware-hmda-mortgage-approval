@@ -1,0 +1,21 @@
+variable,type,description,role
+action_taken,Target source,HMDA action code; retain 1 and 3 only,Target construction
+outcome,Target,1=originated; 0=denied,Binary label
+loan_amount,Numeric,Requested loan amount,Predictor
+income,Numeric,Applicant income as reported in HMDA,Predictor
+property_value,Numeric,Property value,Predictor
+debt_to_income_ratio,Categorical/ordinal,Reported DTI category,Predictor
+loan_type,Categorical,Loan program/type,Predictor
+loan_purpose,Categorical,Purpose of loan,Predictor
+lien_status,Categorical,Lien position,Predictor
+occupancy_type,Categorical,Occupancy category,Predictor
+construction_method,Categorical,Construction method,Predictor
+applicant_age,Categorical/ordinal,Applicant age band,Predictor/audit
+derived_race,Categorical,Derived applicant race,Fairness audit
+derived_ethnicity,Categorical,Derived applicant ethnicity,Fairness audit
+derived_sex,Categorical,Derived applicant sex,Fairness audit
+tract_population,Numeric,Census tract population,Contextual predictor
+tract_minority_population_percent,Numeric,Minority population percentage,Contextual predictor/audit
+ffiec_msa_md_median_family_income,Numeric,Area median family income,Contextual predictor
+tract_to_msa_income_percentage,Numeric,Tract-to-area income percentage,Contextual predictor
+denial_reason-1,Categorical,Reported denial reason,Exclude: leakage/post-decision
